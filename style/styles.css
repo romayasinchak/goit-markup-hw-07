@@ -319,7 +319,6 @@ img {
 
 .mobile-menu-media-list {
   display: flex;
-  justify-content: center;
   gap: 40px;
 }
 @media screen and (min-width: 480px) {
@@ -406,7 +405,7 @@ img {
 
   .curent::after {
     left: 0;
-    bottom: -10px;
+    bottom: -4px;
 
     content: "";
     display: block;
@@ -425,8 +424,6 @@ img {
     flex-direction: column;
     justify-content: center;
     margin-left: 118px;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   .adress-item:not(:last-child) {
@@ -733,13 +730,13 @@ img {
 
 .modal {
   position: absolute;
-  transform: translate(-50%) scale(1);
+  transform: translate(-50%,-50%) scaleY(1);
   opacity: 1;
   transition: transform 250ms var(--cubic-bezier),
     opacity 250ms var(--cubic-bezier);
   padding-top: 72px;
   padding-bottom: 24px;
-  top: 96px;
+  top: 50%;
   padding-left: 16px;
   padding-right: 16px;
   max-width: 392px;
@@ -748,7 +745,6 @@ img {
   overflow-y: auto;
   height: auto;
   left: 50%;
-  height: 586px;
   border-radius: 4px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -764,13 +760,7 @@ img {
   .modal {
     padding-left: 24px;
     padding-right: 24px;
-    width: 408px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    top: 80px;
+    max-width: 408px;
   }
 }
 
@@ -791,7 +781,7 @@ img {
   top: 24px;
   right: 24px;
   border-radius: 50%;
-
+ 
   color: #000000;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1174,7 +1164,6 @@ img {
 @media screen and (min-width: 1200px) {
   .team-list {
     padding: 0;
-    width: 1158px;
   }
 
   .team-item:not(:last-child) {
@@ -1219,8 +1208,7 @@ img {
 
 .link-list {
   display: flex;
-  padding-left: 14px;
-  padding-right: 14px;
+justify-content: center;
   gap: 24px;
 }
 
@@ -1527,6 +1515,7 @@ img {
   line-height: var(--primary-line-height);
   letter-spacing: var(--primary-letter-spacing);
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .subscribe-icon {
